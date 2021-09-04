@@ -9,5 +9,3 @@ So far the following fokker-planck equation for the following processes have bee
 1. The Ornstein-Uhlenbeck process
 2. The Geometric Brownian Motion
 3. The Cox-Ingersoll-Ross process
-
-$x=y$
