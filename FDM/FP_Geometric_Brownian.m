@@ -15,7 +15,7 @@ c = (sigma*x).^2/2;
  
 [L,U] = lu(M1);
 P = zeros(M,N);
-P(:,1)=normpdf(x,5,1);
+P(:,1)=normpdf(x,1.5,0.5);
 
 for i=(2:N)
     P(:,i)= U \ (L \ (M2*P(:,i-1)));
