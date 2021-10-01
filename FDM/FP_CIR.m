@@ -1,4 +1,4 @@
-function [t,x,P]=FP_CIR(kappa, theta, sigma, h ,k, x_min,x_max, t_min,t_max, alpha, beta)
+function [t,x,P]=FP_CIR(kappa, theta, sigma, x_0, nu, h ,k, x_min,x_max, t_min,t_max)
 
 t = (t_min:k:t_max)';
 x = (x_min:h:x_max)';
@@ -15,7 +15,7 @@ c = ((sigma)^2*x)/2;
  
 [L,U] = lu(M1);
 P = zeros(M,N);
-P(:,1)=normpdf(x,alpha,beta);
+P(:,1)=normpdf(x,x_0,nu);
 
 for i=(2:N)
     P(:,i)= U \ (L \ (M2*P(:,i-1)));

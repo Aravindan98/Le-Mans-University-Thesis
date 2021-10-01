@@ -1,4 +1,4 @@
-function [t,x,P]=FP_Geometric_Brownian(mu, sigma, h ,k, x_min,x_max, t_min,t_max)
+function [t,x,P]=FP_Geometric_Brownian(mu, sigma, x_0, nu, h ,k, x_min,x_max, t_min,t_max)
 
 t = (t_min:k:t_max)';
 x = (x_min:h:x_max)';
@@ -15,7 +15,7 @@ c = (sigma*x).^2/2;
  
 [L,U] = lu(M1);
 P = zeros(M,N);
-P(:,1)=normpdf(x,1.5,0.5);
+P(:,1)=normpdf(x,x_0,nu);
 
 for i=(2:N)
     P(:,i)= U \ (L \ (M2*P(:,i-1)));
