@@ -1,4 +1,4 @@
-# Le Mans University thesis
+# Le Mans University - Undergraduate thesis
 
 This repo contains all the code and images for my thesis.
 
