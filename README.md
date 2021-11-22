@@ -3,7 +3,7 @@
 This repo contains all the code and images for my thesis.
 
 ---
-## Two methods are explored in this project:
+## Three methods are explored and compared in this project:
 1. The Crank-Nicholson methods as illustrated by Poulsen. Visit the FDM directory for the MATLAB scripts
 2. The Deep Galerkin Method. Visit the DGM directory for the iPynb notebooks.
 3. The code for the Finite Element Methods was given by Prof. Alexandre Brouste of Le Mans University. It was modified for a case-by-case basis for each of the diffusion processes.
