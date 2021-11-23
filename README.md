@@ -34,13 +34,17 @@ The steps are as follows:
 6. After this step, calling `ssh Jaws` should initiate the connection establishment to the server. Enter the passphrase for the key we created in step 2 and login with the password given by the CCIPL admin. After this, we should be getting the bash shell prompt.
 7. Python works, but we won't be able to install any dependencies directly. For that we need to create a virtual environment using the following command: 
 ```
-python3 -m venv \path\name of virtual environment
+python3 -m venv \path\<name of virtual environment>
 ```
 8. Type the command: `source <path to virtual environment>\bin\activate`. This activates the virtual environment.
 9. You should see something like this in the terminal: `(name of virtual environment) bash>` and now we can download all the required dependencies for our project smoothly.
 10. We can do a `pip3 freeze > requirements.txt` to get our list of dependencies in a text file and the next time simple `pip3 requirements.txt` will install everything properly.
 11. Any file transfers to or from our local directory involves the sftp protocol. Simply navigate to you local directory and type `sftp Jaws`. This will establish the connnection for file transfers
-12. Use `get <filename>*` and `put <filename>` to download and upload files from your local directory to the remote directory.
+12. Use `get <filename>` and `put <filename>` to download and upload files from your local directory to the remote directory.
+
+List of useful links:
+- [venv for mac/linux](https://www.youtube.com/watch?v=Kg1Yvry_Ydk&t=707s)
+- [sftp](https://www.digitalocean.com/community/tutorials/how-to-use-sftp-to-securely-transfer-files-with-a-remote-server) 
 
    
 
