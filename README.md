@@ -39,6 +39,9 @@ python3 -m venv \path\name of virtual environment
 8. Type the command: `source <path to virtual environment>\bin\activate`. This activates the virtual environment.
 9. You should see something like this in the terminal: `(name of virtual environment) bash>` and now we can download all the required dependencies for our project smoothly.
 10. We can do a `pip3 freeze > requirements.txt` to get our list of dependencies in a text file and the next time simple `pip3 requirements.txt` will install everything properly.
+11. Any file transfers to or from our local directory involves the sftp protocol. Simply navigate to you local directory and type `sftp Jaws`. This will establish the connnection for file transfers
+12. Use `get <filename>*` and `put <filename>` to download and upload files from your local directory to the remote directory.
+
    
 
 
