@@ -27,8 +27,8 @@ The steps are as follows:
   ```
   Host Jaws
      Hostname jaws.ccipl.univ-nantes.fr
-     User vethachalam_a
-     ProxyCommand C:\Windows\System32\OpenSSH\ssh.exe vethachalam_a@banzai.ccipl.univ-nantes.fr -W %h:%p
+     User <USERNAME>
+     ProxyCommand C:\Windows\System32\OpenSSH\ssh.exe <USERNAME>@banzai.ccipl.univ-nantes.fr -W %h:%p
      ForwardX11 yes
   ```
 6. After this step, calling `ssh Jaws` should initiate the connection establishment to the server. Enter the passphrase for the key we created in step 2 and login with the password given by the CCIPL admin. After this, we should be getting the bash shell prompt.
