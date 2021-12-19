@@ -14,6 +14,8 @@ So far the following fokker-planck equation for the following processes have bee
 3. The Cox-Ingersoll-Ross process
 
 ---
+![gbm](https://user-images.githubusercontent.com/42924282/146661093-9c702b45-3930-445e-be0c-1eeccc0895c3.gif)
+
 ## How to use the CCIPL "Waves" cluster? (These instructions are useful for users outside the University of Nantes)
 I used a Windows 10 machine, but the instructions for Mac and Linux users is also quite easy.
 I followed this [documentation](https://doc.ccipl.univ-nantes.fr/CCIPL-PUBLIC/stable/access/access.html).
